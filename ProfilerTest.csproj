@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a443f51e-d199-4b20-830e-54c227d6fdb5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Contrast.SensorsNetCore" Version="1.8.6" />
+    <PackageReference Include="Instana.Tracing.Core" Version="1.188.9" />
+    <PackageReference Include="Instana.Tracing.Core.Rewriter.Linux" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="contrast_security.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>

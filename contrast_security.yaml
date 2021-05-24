@@ -1,0 +1,9 @@
+agent:
+  logger:
+    path: /var/tmp
+    level: INFO
+api:  
+    url: https://eval.contrastsecurity.com/Contrast
+    user_name: USER NAME HERE 
+    api_key: API KEY HERE
+    service_key: SERVICE KEY HERE
